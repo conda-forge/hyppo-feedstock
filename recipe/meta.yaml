@@ -1,5 +1,5 @@
 {% set name = "hyppo" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/neurodata/hyppo/archive/v{{ version }}.tar.gz
-  sha256: a7e57f420813bb80e515b01ba3cdaf50f3e2c1672e6c1b2dbeb21f4e60a29847
+  sha256: e02064ee89f1f1c6d5678abe4bd20f3d60486440b6a4459211fc8eeb88d0907f
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - setuptools 
+    - setuptools
   run:
     - python >=3.7
     - numpy >=1.17
